@@ -1,39 +1,47 @@
 :root {
-  --clr-primary-1:black;
-  --clr-neutral-1: white;
-  --clr-accent-1: #18348a;
-  --clr-secondary-1: #2c6bc3;
-  --clr-extra-1: #f4f4f4;
+  --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-100: hsl(13, 100%, 96%);
 
-  --ff-primary: Arial, Helvetica, sans-serif;
+  --clr-primary-400: hsl(228, 39%, 23%);
+
+  --clr-neutral-100: hsl(232, 12%, 13%);
+  --clr-neutral-900: hsl(0 0% 0%);
+
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
   --ff-body: var(--ff-primary);
-  --ff-heading:var(--ff-primary);
+  --ff-heading: var(--ff-primary);
 
   --fw-regular: 400;
+  --fw-semi-bold: 500;
   --fw-bold: 700;
 
-  --fs-300:1rem;
-  --fs-400:1.25rem;
-  --fs-500:1.50rem;
-  --fs-600:1.75rem;
-  --fs-700:2.5rem;
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 0.9375rem;
+  --fs-600: 1rem;
+  --fs-700: 1.875rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
 
   --fs-body: var(--fs-400);
-  --fs-primary-heading: var(--fs-600);
-  --fs-neutral-heading: var(--fs-500);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
   --fs-nav: var(--fs-500);
   --fs-button: var(--fs-300);
 }
 
-@media(min-width: 50em){
-  :root{
-    --fs-600:2.5rem;
-    --fs-700:3.5rem;
-
+@media (min-width: 50em) {
+  :root {
     --fs-body: var(--fs-500);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+
     --fs-nav: var(--fs-300);
   }
 }
+
+/* https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
 *,
@@ -43,22 +51,15 @@
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -67,9 +68,13 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -81,25 +86,18 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+svg {
   max-width: 100%;
   display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -110,49 +108,101 @@ select {
   }
 }
 
-/*Utilitie classes*/
+/* Utility classes */
 
-.text-primary-400{
-  color: var(--clr-primary-1);
+.text-primary-400 {
+  color: var(--clr-primary-400);
 }
-
-.text-neutral-400{
-  color: var(--clr-neutral-1);
+.text-accent-400 {
+  color: var(--clr-accent-400);
 }
-.text-accent-400{
-  color: var(--clr-accent-1);
+.text-accent-100 {
+  color: var(--clr-accent-100);
 }
-.text-secondary-400{
-  color: var(--clr-secondary-1);
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
 }
-.text-extra-400{
-  color: var(--clr-extra-1);
-}
-.bg-primary-400{
-  background-color: var(--clr-primary-1);
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
 }
 
-.bg-neutral-400{
-  background-color: var(--clr-neutral-1);
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
 }
-.bg-accent-400{
-  background-color: var(--clr-accent-1);
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
 }
-.bg-secondary-400{
-  background-color: var(--clr-secondary-1);
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
 }
-.bg-extra-400{
-  background-color: var(--clr-extra-1);
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
 }
 
-.fw-bold{font-weight: var(--fw-bold);}
-.fw-regular{font-weight: var(--fw-regular);}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
 
-.fs-primary-heading{font-size: var(--fs-primary-heading);}
-.fs-neutral-heading{font-size: var(--fs-neutral-heading);}
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
 
-.fs-300{font-size: var(--fs-300);}
-.fs-400{font-size: var(--fs-400);}
-.fs-500{font-size: var(--fs-500);}
-.fs-600{font-size: var(--fs-600);}
-.fs-700{font-size: var(--fs-700);}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.rounded-navbar {
+  border-radius: 20px;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#welcome span {
+  display: inline-block;
+  opacity: 0;
+  animation: slideInFromTop 0.5s forwards;
+}
+
+#welcome span:nth-child(1) { animation-delay: 0.1s; }
+#welcome span:nth-child(2) { animation-delay: 0.2s; }
+#welcome span:nth-child(3) { animation-delay: 0.3s; }
+#welcome span:nth-child(4) { animation-delay: 0.4s; }
+#welcome span:nth-child(5) { animation-delay: 0.5s; }
+#welcome span:nth-child(6) { animation-delay: 0.6s; }
+#welcome span:nth-child(7) { animation-delay: 0.7s; }
