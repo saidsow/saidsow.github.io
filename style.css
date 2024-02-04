@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .rounded-navbar {
@@ -17,7 +19,12 @@
     opacity: 1;
   }
 }
-
+.home{
+  height: 50vh;
+}
+#welcome {
+  letter-spacing: -5px;
+}
 #welcome span {
   display: inline-block;
   opacity: 0;
@@ -31,3 +38,13 @@
 #welcome span:nth-child(5) { animation-delay: 0.5s; }
 #welcome span:nth-child(6) { animation-delay: 0.6s; }
 #welcome span:nth-child(7) { animation-delay: 0.7s; }
+#welcome span:nth-child(8) { animation-delay: 0.8s; }
+
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+}
