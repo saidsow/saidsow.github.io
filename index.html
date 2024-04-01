@@ -6,28 +6,29 @@
     <title>My Portfolio</title>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="carousal.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <script async src="scripts.js"></script>
 </head>
 <body>
 <div class="container">
     <nav class="navbar navbar-expand-lg rounded-navbar">
         <div class="container">
-          <a class="navbar-brand" href="#">SDS</a>
+          <a class="navbar-brand" href="/"> saiddesignsolutions</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" id="projects-link" href="#">Projects</a>
+
+                
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" id="about-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="mailto:sds@saiddesignsolutions.com" >Contact</a>
@@ -37,8 +38,65 @@
         </div>
     </nav>
 
+  <!--Home-->
+  <section id="home" class="fade-in box">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col">This is the home</div>
+        </div>
+    </div>
+</section>
+  <!--Who am I-->
+<section id="about" style="display: none;" class="fade-in box">
+  <div class="container d-flex justify-content-center align-items-center">
+      <div class="row">
+          <div class="col-md-6">
+              <h2>About Me</h2>
+              <p>
+                  I am a web developer and designer. I have been working in this field for the past 5 years. I have worked on various projects and have gained a lot of experience. I have worked with various clients and have always delivered the best results. I am passionate about my work and always strive to deliver the best results.
+              </p>
+          </div>
+          <div class="col-md-6">
+              <img src="images/codeimage.jpg" class="img-fluid rounded" alt="about">
+          </div>
+      </div>
+  </div>
+</section>
 
-
+    <!--Projects-->
+    <section id="projects" style="display: none;" class="fade-in box">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">This is a project that I have worked on. It is a website that I have designed and developed. It is a responsive website that works on all devices.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card project-card mt-3">
+                      <div class="card-body">
+                          <h5 class="card-title">Project 1</h5>
+                          <p class="card-text">This is a project that I have worked on. It is a website that I have designed and developed. It is a responsive website that works on all devices.</p>
+                          <a href="#" class="btn btn-primary">View Project</a>
+                      </div>
+                  </div>
+              </div>   <div class="col-md-4">
+                <div class="card project-card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">This is a project that I have worked on. It is a website that I have designed and developed. It is a responsive website that works on all devices.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

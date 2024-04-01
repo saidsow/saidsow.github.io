@@ -1,50 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-* {
-  font-family: Lato, sans-serif;
-  background-color: black;
-  color: white;
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box{
+  height: 90vh;
 }
 
-.rounded-navbar {
-  border-radius: 20px;
+.project-card {
+background-image: url('images/codeimage.jpg');
+background-size: cover;
+background-position: center;
+}
+.fade-in {
+animation: fadeIn ease 3s;
+-webkit-animation: fadeIn ease 3s;
+-moz-animation: fadeIn ease 3s;
+-o-animation: fadeIn ease 3s;
+-ms-animation: fadeIn ease 3s;
 }
 
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.home{
-  height: 50vh;
-}
-#welcome {
-  letter-spacing: -5px;
-}
-#welcome span {
-  display: inline-block;
-  opacity: 0;
-  animation: slideInFromTop 0.5s forwards;
-}
-
-#welcome span:nth-child(1) { animation-delay: 0.1s; }
-#welcome span:nth-child(2) { animation-delay: 0.2s; }
-#welcome span:nth-child(3) { animation-delay: 0.3s; }
-#welcome span:nth-child(4) { animation-delay: 0.4s; }
-#welcome span:nth-child(5) { animation-delay: 0.5s; }
-#welcome span:nth-child(6) { animation-delay: 0.6s; }
-#welcome span:nth-child(7) { animation-delay: 0.7s; }
-#welcome span:nth-child(8) { animation-delay: 0.8s; }
-
-.navbar {
-  background-color: black;
-  color: white;
-}
-
-.navbar a {
-  color: white;
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
