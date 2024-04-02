@@ -1,7 +1,8 @@
 body {
-  font-family: 'Dancing Script', cursive;
-  box-sizing: border-box;
-  overflow: hidden;
+  background-color: #f0f0f0; /* replace with your color */
+  font-family: 'Arial', sans-serif; /* replace with your font */
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
 }
 .box{
   height: 90vh;
@@ -65,4 +66,14 @@ animation: fadeIn ease 3s;
 
 .slide-in-bottom {
   animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.responsive-text {
+  font-size: 1rem; /* small size for small screens */
+}
+
+@media (min-width: 992px) { /* adjust as needed */
+  .responsive-text {
+    font-size: 2rem; /* big size for big screens */
+  }
 }
