@@ -1,21 +1,14 @@
-body {
-  background-color: #f0f0f0; /* replace with your color */
-  font-family: 'Arial', sans-serif; /* replace with your font */
-  margin: 0; /* remove default margin */
-  padding: 0; /* remove default padding */
-}
-.box{
-  height: 90vh;
+body{
+  overflow: hidden;
 }
 
-.testimonial {
-  background-color: #680000;
+.body-background {
+  background-image: url('images/tech.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.project-card {
-background-image: url('images/codeimage.jpg');
-background-size: cover;
-background-position: center;
-}
+
+
 .fade-in {
 animation: fadeIn ease 3s;
 -webkit-animation: fadeIn ease 3s;
