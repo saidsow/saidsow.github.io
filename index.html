@@ -49,6 +49,12 @@
                 <h1 class="display-4">Welcome to My Portfolio</h1>
                 <p class="lead">3D Modeling & Web Development</p>
                 <a href="#projects" class="btn btn-primary">View My Work</a>
+
+                  <!-- Spline Animation -->
+             <div class="spline-container">
+                <spline-viewer url="https://prod.spline.design/2H3Z9dFrwkxJV7-o/scene.splinecode"></spline-viewer>
+            </div>
+           
             </div>
         </section>
 
@@ -161,26 +167,6 @@
         </section>
         
         <!-- Modals -->
-        <!-- Architectural Designs Modal -->
-        <div class="modal fade" id="architecturalDesignsModal" tabindex="-1" aria-labelledby="architecturalDesignsModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="architecturalDesignsModalLabel">Architectural Designs</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>We offer detailed architectural design services, including:</p>
-                        <ul>
-                            <li>Building plans and elevations</li>
-                            <li>Interior and exterior renderings</li>
-                            <li>Landscape design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Web Development Modal -->
         <div class="modal fade" id="webDevelopmentModal" tabindex="-1" aria-labelledby="webDevelopmentModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -194,8 +180,8 @@
                             <div class="row">
                                 <!-- Landing Pages Card -->
                                 <div class="col-md-4 mb-4">
-                                    <div class="card h-100 border-primary">
-                                        <div class="card-header bg-primary text-white">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
                                             <h5 class="card-title">Landing Pages</h5>
                                             <h6 class="card-subtitle mb-2">Starting at $250</h6>
                                         </div>
@@ -207,14 +193,14 @@
                                             </ul>
                                         </div>
                                         <div class="card-footer text-muted">
-                                            <button type="button" class="btn btn-primary">Order Now</button>
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- 5-Page Websites Card -->
                                 <div class="col-md-4 mb-4">
-                                    <div class="card h-100 border-primary">
-                                        <div class="card-header bg-primary text-white">
+                                    <div class="card h-100 border-dark">
+                                        <div class="card-header bg-dark text-white">
                                             <h5 class="card-title">5-Page Websites</h5>
                                             <h6 class="card-subtitle mb-2">Starting at $1000</h6>
                                         </div>
@@ -226,14 +212,14 @@
                                             </ul>
                                         </div>
                                         <div class="card-footer text-muted">
-                                            <button type="button" class="btn btn-primary">Order Now</button>
+                                            <button type="button" class="btn btn-dark">Order Now</button>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Full E-commerce Solutions Card -->
                                 <div class="col-md-4 mb-4">
-                                    <div class="card h-100 border-primary">
-                                        <div class="card-header bg-primary text-white">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
                                             <h5 class="card-title">Full E-commerce Solutions</h5>
                                             <h6 class="card-subtitle mb-2">Starting at $5000</h6>
                                         </div>
@@ -245,7 +231,223 @@
                                             </ul>
                                         </div>
                                         <div class="card-footer text-muted">
-                                            <button type="button" class="btn btn-primary">Order Now</button>
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architectural Designs Modal -->
+        <div class="modal fade" id="architecturalDesignsModal" tabindex="-1" aria-labelledby="architecturalDesignsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="architecturalDesignsModalLabel">Architectural Designs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Building Plans Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="card-title">Building Plans</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>Detailed architectural plans</li>
+                                                <li>Floor plans</li>
+                                                <li>Elevation views</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Interior Renderings Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-dark">
+                                        <div class="card-header bg-dark text-white">
+                                            <h5 class="card-title">Interior Renderings</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>High-quality interior renderings</li>
+                                                <li>Custom design options</li>
+                                                <li>Realistic lighting and textures</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-dark">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Landscape Design Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="card-title">Landscape Design</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>Comprehensive landscape plans</li>
+                                                <li>Planting design</li>
+                                                <li>Hardscape design</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- General 3D Modeling Modal -->
+        <div class="modal fade" id="general3DModelingModal" tabindex="-1" aria-labelledby="general3DModelingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="general3DModelingModalLabel">General 3D Modeling</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Character Modeling Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="card-title">Character Modeling</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>High-detail characters</li>
+                                                <li>Custom design</li>
+                                                <li>Animation-ready models</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Environment Modeling Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-dark">
+                                        <div class="card-header bg-dark text-white">
+                                            <h5 class="card-title">Environment Modeling</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>Realistic environments</li>
+                                                <li>Custom scenes</li>
+                                                <li>Game-ready assets</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-dark">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product Modeling Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="card-title">Product Modeling</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>Detailed product models</li>
+                                                <li>High-quality textures</li>
+                                                <li>Realistic renderings</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Visualization Modal -->
+        <div class="modal fade" id="productVisualizationModal" tabindex="-1" aria-labelledby="productVisualizationModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productVisualizationModalLabel">Product Visualization</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!-- 3D Product Renderings Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="card-title">3D Product Renderings</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>High-resolution renderings</li>
+                                                <li>Photo-realistic quality</li>
+                                                <li>Customizable angles and lighting</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Interactive 3D Models Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-dark">
+                                        <div class="card-header bg-dark text-white">
+                                            <h5 class="card-title">Interactive 3D Models</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>Interactive web-based 3D models</li>
+                                                <li>Customizable features</li>
+                                                <li>User-friendly interface</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-dark">Order Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product Animations Card -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h5 class="card-title">Product Animations</h5>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <ul class="list-unstyled">
+                                                <li>High-quality animations</li>
+                                                <li>Custom scenarios</li>
+                                                <li>Realistic motion</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <button type="button" class="btn btn-secondary">Order Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -257,45 +459,6 @@
         </div>
 
 
-        <!-- General 3D Modeling Modal -->
-        <div class="modal fade" id="general3DModelingModal" tabindex="-1" aria-labelledby="general3DModelingModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="general3DModelingModalLabel">General 3D Modeling</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>We provide general 3D modeling services for various applications, including:</p>
-                        <ul>
-                            <li>Character modeling</li>
-                            <li>Environment modeling</li>
-                            <li>Product modeling</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product Visualization Modal -->
-        <div class="modal fade" id="productVisualizationModal" tabindex="-1" aria-labelledby="productVisualizationModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="productVisualizationModalLabel">Product Visualization</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>We create realistic product visualizations, including:</p>
-                        <ul>
-                            <li>3D product renderings</li>
-                            <li>Interactive 3D models</li>
-                            <li>Product animations</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- End Modals -->
         
         <!-- Skills-->
@@ -421,9 +584,9 @@
         
         
     </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.6/build/spline-viewer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>  
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.4/build/spline-viewer.js"></script>
 </body>
 </html>
 

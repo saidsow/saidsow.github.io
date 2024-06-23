@@ -12,6 +12,7 @@
 body {
     background-color: var(--neutral-color-white);
     color: var(--neutral-color-black);
+    overflow-x: hidden;
     font-size: 1rem; /* Base font size for paragraphs */
 }
 
@@ -81,7 +82,24 @@ h1 {
     color: var(--accent-color-2);
 }
 
-/* Custom Classes */
+.spline-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.spline-container {
+    position: absolute;
+    z-index: 2;
+    top: 50vh;
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+}
+
+
+/* Skills Section */
 
 @keyframes float {
     0% {
@@ -97,7 +115,7 @@ h1 {
 
 .skill-icon {
     width: 100px;
-    height: auto;
+    height: 100vh;
     animation: float 4s ease-in-out infinite;
     transition: transform 0.3s ease;
 }
@@ -120,4 +138,28 @@ h1 {
 
 .card-footer {
     text-align: center;
+}
+
+.card-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
 }
