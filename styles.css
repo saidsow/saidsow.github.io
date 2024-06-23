@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #ff0000; /* Red */
+    --accent-color-1: #ffeb3b; /* Yellow */
+    --accent-color-2: #03a9f4; /* Light Blue */
+    --neutral-color-black: #000000; /* Black */
+    --neutral-color-white: #ffffff; /* White */
+    --big-font-size: 4rem; /* Big font size */
+}
+
+/* General Styles */
+body {
+    background-color: var(--neutral-color-white);
+    color: var(--neutral-color-black);
+    font-size: 1rem; /* Base font size for paragraphs */
+}
+
+h1 {
+    /* Uses default Bootstrap size */
+}
+
+.big-font {
+    font-size: var(--big-font-size);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--neutral-color-black);
+}
+
+.nav-link.active {
+    color: var(--accent-color-2);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-accent-1 {
+    background-color: var(--accent-color-1);
+    border-color: var(--accent-color-1);
+    color: var(--neutral-color-black);
+}
+
+.btn-accent-2 {
+    background-color: var(--accent-color-2);
+    border-color: var(--accent-color-2);
+    color: var(--neutral-color-white);
+}
+
+/* Additional Custom Styles */
+.custom-background {
+    background-color: rgb(255, 255, 255);
+    color: var(--neutral-color-black);
+}
+
+.custom-text-primary {
+    color: var(--primary-color);
+}
+
+.custom-text-secondary {
+    color: var(--secondary-color);
+}
+
+.custom-text-accent-1 {
+    color: var(--accent-color-1);
+}
+
+.custom-text-accent-2 {
+    color: var(--accent-color-2);
+}
+
+/* Custom Classes */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.skill-icon {
+    width: 100px;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* Modals */
+.card-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.card-footer {
+    text-align: center;
+}
