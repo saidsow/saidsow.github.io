@@ -95,43 +95,43 @@ h1 {
     align-items: center;
 }
 
-.hero-section h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
 }
 
-.hero-section p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+.content {
+    position: relative;
+    z-index: 2;
+    color: white; /* Or any other color that stands out */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
 }
-
-.hero-section .cta-button {
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-}
-
-
-
 .spline-container {
     position: absolute;
-    left: 0;
-    width: 30%;
+    z-index: 0;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    pointer-events: none; /* Ensures it doesn't interfere with other elements */
+    transition: top 0.3s ease-in-out; /* Smooth transition */
 }
 
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
 
-    .hero-section p {
-        font-size: 1.25rem;
-    }
 
     .spline-container {
-        top: 90%; /* Adjust to place it at the bottom */
-        transform: translate(-50%, -50%);
+        top: 100%;
+        bottom: 10%;
+        transform: translate(-50%, 0%);
         width: 200px; /* Adjust size for mobile */
         height: 200px; /* Adjust size for mobile */
     }
