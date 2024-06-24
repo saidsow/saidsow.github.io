@@ -93,23 +93,25 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
+/*
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5);  
     z-index: 1;
 }
+
 
 .content {
     position: relative;
     z-index: 2;
-    color: white; /* Or any other color that stands out */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
+*/
 .spline-container {
     position: absolute;
     z-index: 0;
