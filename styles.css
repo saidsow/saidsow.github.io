@@ -82,20 +82,23 @@ h1 {
     color: var(--accent-color-2);
 }
 
-.spline-container{
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('Assets/Particles.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
 }
 
 .spline-container {
     position: absolute;
-    z-index: 2;
-    top: 50vh;
-    width: 100%; /* Adjust width as needed */
-    height: 100%; /* Adjust height as needed */
+
+    left: 0;
+    width: 30%;
 }
 
 
@@ -115,13 +118,9 @@ h1 {
 
 .skill-icon {
     width: 100px;
-    height: 100vh;
+    height: 10vh;
     animation: float 4s ease-in-out infinite;
     transition: transform 0.3s ease;
-}
-
-.skill-icon:hover {
-    transform: scale(1.1);
 }
 
 
