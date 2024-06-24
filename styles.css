@@ -115,7 +115,7 @@ h1 {
 .spline-container {
     position: absolute;
     z-index: 0;
-    top: 100%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 300px; /* Adjust width as needed */
@@ -130,7 +130,7 @@ h1 {
 
 
     .spline-container {
-        top: 100%;
+        top: 60%;
         bottom: 10%;
         transform: translate(-50%, 0%);
         width: 300px; /* Adjust size for mobile */
