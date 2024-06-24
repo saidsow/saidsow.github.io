@@ -82,6 +82,7 @@ h1 {
     color: var(--accent-color-2);
 }
 
+/* Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
@@ -96,11 +97,19 @@ h1 {
 
 .spline-container {
     position: absolute;
-
     left: 0;
     width: 30%;
 }
 
+@media (max-width: 768px) {
+
+    .spline-container {
+        top: 90%; /* Adjust to place it at the bottom */
+        transform: translate(50,5%);
+        width: 200px; /* Adjust size for mobile */
+        height: 200px; /* Adjust size for mobile */
+    }
+}
 
 /* Skills Section */
 
