@@ -93,25 +93,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-/*
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);  
-    z-index: 1;
-}
 
-
-.content {
-    position: relative;
-    z-index: 2;
-    color: white; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-}
-*/
 .spline-container {
     position: absolute;
     z-index: 0;
@@ -122,6 +104,69 @@ h1 {
     height: 300px; /* Adjust height as needed */
     pointer-events: none; /* Ensures it doesn't interfere with other elements */
     transition: top 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* About.css */
+/* styles.css */
+.about-section {
+    background: url('Assets/Particles.png') no-repeat center center/cover;
+    padding: 5rem 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent card background */
+    border: none;
+}
+
+/* Projects.css */
+.projects-section {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.projects-section .card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section .card-img-top {
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.projects-section .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.projects-section .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 
