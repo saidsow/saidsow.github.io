@@ -83,6 +83,12 @@ h1 {
     color: var(--accent-color-2);
 }
 
+
+/*Globals Styles*/
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent card background */
+    border: none;
+}
 /* Hero Section */
 .hero-section {
     position: relative;
@@ -120,22 +126,23 @@ h1 {
     }
 }
 
-
 /* About.css */
 .about-section {
     background-color: #ffffff;
 }
 
 
-.card {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent card background */
-    border: none;
-}
-
 /* Projects.css */
 .projects-section {
     background-color: #f8f9fa;
     padding: 5rem 0;
+}
+
+.projects-section .card-img-top,
+.projects-section .sketchfab-embed-wrapper iframe {
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    width: 100%;
 }
 
 /* Skills Section */
