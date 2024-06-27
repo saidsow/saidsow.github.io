@@ -144,6 +144,54 @@ h1 {
     object-fit: cover;
     width: 100%;
 }
+/*Services Section*/
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent card background */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for pop-out effect */
+    border-radius: 0.75rem; /* Custom rounded corners */
+}
+
+#services {
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+#services .row {
+    margin-bottom: 2rem;
+}
+
+/* Specific background images for each service */
+#services .row:nth-child(3) .service-card {
+    background-image: url('Assets/ArchViz.png');
+}
+
+#services .row:nth-child(4) .service-card {
+    background-image: url('Assets/WebDev.png');
+}
+
+#services .row:nth-child(5) .service-card {
+    background-image: url('Assets/3dGeneral.png');
+}
+
+#services .row:nth-child(6) .service-card {
+    background-image: url('Assets/products.png');
+}
+
+/* Additional styling for card background images */
+.service-card {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* White text for better readability on backgrounds */
+}
+
+.service-card .card-body {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    padding: 2rem;
+}
+
+
 
 /* Skills Section */
 
