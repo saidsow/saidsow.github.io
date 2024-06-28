@@ -191,45 +191,7 @@ h1 {
     padding: 2rem;
 }
 
-
-
-/* Skills Section */
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.skill-icon {
-    width: 100px;
-    height: 10vh;
-    animation: float 4s ease-in-out infinite;
-    transition: transform 0.3s ease;
-}
-
-
 /* Modals */
-.card-header {
-    font-weight: bold;
-    text-align: center;
-}
-
-.card-body ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.card-footer {
-    text-align: center;
-}
-
 .card-header {
     font-weight: bold;
     text-align: center;
@@ -253,3 +215,127 @@ h1 {
     background-color: #343a40;
     border-color: #343a40;
 }
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Skills Section */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Skills Section*/
+#skills {
+    background-color: white;
+    padding: 5rem 0;
+}
+
+
+#skills h2 {
+    font-family: 'Arial', sans-serif; /* Custom font family */
+    font-weight: 700; /* Bold font */
+    color: #000000; /* Black color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    border-bottom: 3px solid #007bff; /* Blue bottom border */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+#skills p {
+    font-family: 'Arial', sans-serif; /* Custom font family */
+    font-size: 1.4rem; /* Slightly larger font size */
+    color: #000000; /* Black color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    margin-bottom: 2rem;
+}
+
+.skill-name {
+    display: inline-block;
+    color: white !important; /* White text */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Rounded corners */
+    margin-top: 0.5rem;
+}
+
+
+.skill-icon {
+    width: 100%;
+    height: 10vh;
+    animation: float 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Specific colors for each skill */
+.js-color {
+    background-color: #713ddf; /* JavaScript purple */
+}
+
+.python-color {
+    background-color: #3776ab; /* Python blue */
+}
+
+.cpp-color {
+    background-color: #00599c; /* C++ blue */
+}
+
+.html-color {
+    background-color: #e34f26; /* HTML orange */
+}
+
+.css-color {
+    background-color: #1572b6; /* CSS blue */
+}
+
+.nodejs-color {
+    background-color: #68a063; /* Node.js green */
+}
+
+.blender-color {
+    background-color: #f5792a; /* Blender orange */
+}
+
+.photoshop-color {
+    background-color: #31a8ff; /* Photoshop blue */
+}
+
+.unreal-color {
+    background-color: #232323; /* Unreal Engine dark gray */
+}
+
+.vscode-color {
+    background-color: #007acc; /* VS Code blue */
+}
+
+.zbrush-color {
+    background-color: #8d8d8d; /* ZBrush gray */
+}
+
+.substance-color {
+    background-color: #013a00; /* Substance Painter dark green */
+}
+
+
