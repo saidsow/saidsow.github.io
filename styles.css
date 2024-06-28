@@ -144,6 +144,26 @@ h1 {
     object-fit: cover;
     width: 100%;
 }
+
+.project-card {
+    opacity: 0;
+    animation: slideIn both;
+    animation-timeline: view(30% 20%);
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translatex(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+
 /*Services Section*/
 .service-card {
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent card background */
@@ -338,4 +358,56 @@ h1 {
     background-color: #013a00; /* Substance Painter dark green */
 }
 
+
+/* Contact Section */
+
+/*Blog Section*/
+
+/*Footer Section*/
+
+/*Animations*/
+.autoShow {
+    animation: autoShowAnimation 0.8s both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.autoBlur{
+    animation: autoBLurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBLurAnimation{
+    0%{
+        filter: blur(50px);
+    }
+    45%, 65%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
 
