@@ -258,15 +258,15 @@ h1 {
 }
 
 #services .row:nth-child(4) .service-card {
-    background-image: url('Assets/images/WebDev.png');
+    background-image: url('../Assets/images/WebDev.png');
 }
 
 #services .row:nth-child(5) .service-card {
-    background-image: url('Assets/images/3dGeneral.png');
+    background-image: url('../Assets/images/3dGeneral.png');
 }
 
 #services .row:nth-child(6) .service-card {
-    background-image: url('Assets/images/products.png');
+    background-image: url('../Assets/images/products.png');
 }
 
 /* Additional styling for card background images */
