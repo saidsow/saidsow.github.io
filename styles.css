@@ -228,11 +228,6 @@ h1 {
     width: 100%;
 }
 
-/* Common Styles for Animations */
-.project-card, .skill-slide, .service-card {
-    opacity: 0;
-    will-change: transform, opacity;
-}
 
 /* Services Section */
 .service-card {
@@ -253,19 +248,19 @@ h1 {
 }
 
 /* Specific background images for each service */
-#services .row:nth-child(3) .service-card {
+#services .row > div:nth-child(1) .service-card {
     background-image: url('../Assets/images/ArchViz.png');
 }
 
-#services .row:nth-child(4) .service-card {
+#services .row > div:nth-child(2) .service-card {
     background-image: url('../Assets/images/WebDev.png');
 }
 
-#services .row:nth-child(5) .service-card {
+#services .row > div:nth-child(3) .service-card {
     background-image: url('../Assets/images/3dGeneral.png');
 }
 
-#services .row:nth-child(6) .service-card {
+#services .row > div:nth-child(4) .service-card {
     background-image: url('../Assets/images/products.png');
 }
 
