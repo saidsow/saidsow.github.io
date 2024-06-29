@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Email configuration
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "sds@saiddesignsolutions.com"; // Replace with your email address
     $subject = "New Contact Form Submission";
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
@@ -18,11 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you, $name. Your message has been sent.";
+        echo json_encode(["status" => "success", "message" => "Thank you, $name. Your message has been sent."]);
     } else {
-        echo "Sorry, there was an error sending your message. Please try again later.";
+        echo json_encode(["status" => "error", "message" => "Sorry, there was an error sending your message. Please try again later."]);
     }
 } else {
-    echo "Invalid request.";
+    echo json_encode(["status" => "error", "message" => "Invalid request."]);
 }
 ?>
