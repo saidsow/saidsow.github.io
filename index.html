@@ -580,6 +580,51 @@
             </div>
         </section>
         
+           <!--Testiomonials-->
+           <section id="testimonials" class="py-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Testimonials</h2>
+                        <p class="lead">What my clients say about me.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow testimonial-card">
+                            <div class="card-body text-center">
+                                <p class="card-text">"Said did an amazing job on our project. The level of detail and quality of the 3D models were outstanding!"</p>
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-subtitle mb-2 text-muted">CEO, XYZ Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow testimonial-card">
+                            <div class="card-body text-center">
+                                <p class="card-text">"I highly recommend Said for web development. He delivered everything on time and exceeded our expectations."</p>
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-subtitle mb-2 text-muted">Founder, ABC Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow testimonial-card">
+                            <div class="card-body text-center">
+                                <p class="card-text">"Working with Said was a pleasure. His skills in both 3D modeling and web development are top-notch."</p>
+                                <h5 class="card-title">Mark Johnson</h5>
+                                <p class="card-subtitle mb-2 text-muted">Project Manager, DEF Corp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
         <!-- Contact Section -->
         <section id="contact" class="py-5 contact-section">
             <div class="container">
@@ -611,6 +656,7 @@
             </div>
         </section>
     
+        
         <!-- Contact Modal -->
         <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -628,32 +674,6 @@
                 </div>
             </div>
         </div>
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#contactForm').submit(function(event) {
-                    event.preventDefault(); // Prevent the form from submitting the traditional way
-    
-                    $.ajax({
-                        url: 'submit-form.php',
-                        type: 'POST',
-                        data: $(this).serialize(),
-                        dataType: 'json',
-                        success: function(response) {
-                            $('#responseMessage').text(response.message);
-                            $('#responseModal').modal('show');
-                        },
-                        error: function(xhr, status, error) {
-                            $('#responseMessage').text('An error occurred: ' + error);
-                            $('#responseModal').modal('show');
-                        }
-                    });
-                });
-            });
-        </script>
-        
         
         <!-- Blog Section -->
         <section id="blog" class="py-5">
@@ -679,7 +699,8 @@
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>  
+    <script src="script.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
 

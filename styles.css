@@ -390,8 +390,62 @@ h1 {
     background-color: #013a00; /* Substance Painter dark green */
 }
 
+/* Testimonials Section */
+#testimonials {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 5rem 0;
+}
 
-/* Contact Section */
+/* Heading (h2) styling */
+#testimonials h2 {
+    font-family: 'Arial', sans-serif; /* Custom font family */
+    font-weight: 700; /* Bold font */
+    color: #343a40; /* Dark color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    border-bottom: 3px solid #007bff; /* Blue bottom border */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph (p) styling */
+#testimonials p.lead {
+    font-family: 'Arial', sans-serif; /* Custom font family */
+    font-size: 1.4rem; /* Slightly larger font size */
+    color: #000000; /* Black color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    margin-bottom: 2rem;
+}
+
+/* Card styling */
+#testimonials .card {
+    border: none; /* Remove border */
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#testimonials .card-body {
+    padding: 2rem; /* Increase padding */
+}
+
+#testimonials .card-title {
+    font-size: 1.2rem; /* Smaller title size */
+    color: #007bff; /* Blue color */
+    margin-top: 1rem;
+}
+
+#testimonials .card-subtitle {
+    font-size: 1rem; /* Smaller subtitle size */
+    color: #6c757d; /* Muted color */
+}
+
+/* Hover effect */
+#testimonials .card:hover {
+    transform: translateY(-10px) scale(1.1); /* Lift the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+
 /* Contact Section */
 .contact-section {
     background: #ffffff; /* Light grey background */
@@ -400,7 +454,6 @@ h1 {
     overflow: hidden;
 }
 
-/* Form Container */
 .contact-section .container {
     background: white;
     padding: 3rem;
@@ -408,7 +461,6 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Title */
 .contact-section h2 {
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
@@ -417,7 +469,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Section Description */
 .contact-section p.lead {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem;
@@ -425,20 +476,17 @@ h1 {
     margin-bottom: 2rem;
 }
 
-/* Form Labels */
 .contact-section .form-label {
     font-weight: 600;
     color: #495057;
 }
 
-/* Form Fields */
 .contact-section .form-control {
     border-radius: 0.25rem;
     padding: 0.75rem;
     border: 1px solid #ced4da;
 }
 
-/* Form Button */
 .contact-section .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
