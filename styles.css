@@ -177,15 +177,11 @@ h1 {
     }
 }
 
+
 /* About Section */
 .about-section {
     background-color: #ffffff;
 }
-
-
-
-
-
 
 
 /* Common Styles for Animations */
@@ -202,7 +198,7 @@ h1 {
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(-50px) scale(0.2);
+        transform: translateY(-500px) scale(0.2);
     }
     to {
         opacity: 1;
@@ -244,8 +240,6 @@ h1 {
 
 /* About Section */
 
-
-
 .about-card {
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
@@ -255,7 +249,7 @@ h1 {
 @keyframes slideright {
     from {
         opacity: 0;
-        transform: translateX(-10px);
+        transform: translateX(-600px);
     }
     to {
         opacity: 1;
@@ -333,19 +327,19 @@ h1 {
 
 /* Specific background images for each service */
 #services .row:nth-child(3) .service-card {
-    background-image: url('assets/images/ArchViz.png');
+    background-image: url('Assets/images/ArchViz.png');
 }
 
 #services .row:nth-child(4) .service-card {
-    background-image: url('assets/images/WebDev.png');
+    background-image: url('Assets/images/WebDev.png');
 }
 
 #services .row:nth-child(5) .service-card {
-    background-image: url('assets/images/3dGeneral.png');
+    background-image: url('Assets/images/3dGeneral.png');
 }
 
 #services .row:nth-child(6) .service-card {
-    background-image: url('assets/images/products.png');
+    background-image: url('Assets/images/products.png');
 }
 
 /* Additional styling for card background images */
