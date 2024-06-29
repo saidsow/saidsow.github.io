@@ -254,7 +254,7 @@ h1 {
 
 /* Specific background images for each service */
 #services .row:nth-child(3) .service-card {
-    background-image: url('Assets/images/ArchViz.png');
+    background-image: url('../Assets/images/ArchViz.png');
 }
 
 #services .row:nth-child(4) .service-card {
