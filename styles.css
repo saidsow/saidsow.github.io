@@ -131,7 +131,22 @@ h1 {
     background-color: #ffffff;
 }
 
+.about-card {
+    opacity: 0;
+    animation: slideright 1s both;
+    animation-timeline: view(100% 2%);
+}
 
+@keyframes slideright {
+    from {
+        opacity: 0;
+        transform: translatex(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
 /* Projects.css */
 .projects-section {
     background-color: #f8f9fa;
@@ -155,11 +170,11 @@ h1 {
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translatex(500px);
+        transform: translatex(500px) scale(0.2);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
     
@@ -253,6 +268,23 @@ h1 {
 
 
 /* Skills Section */
+
+.skill-slide {
+    opacity: 0;
+    animation: skill-slide 5s both;
+    animation-timeline: view(100% 10%);
+}
+
+@keyframes skill-slide {
+    from {
+        opacity: 0;
+        transform: translatey(-500px) scale(0.2);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 
 @keyframes float {
     0% {
@@ -360,6 +392,67 @@ h1 {
 
 
 /* Contact Section */
+/* Contact Section */
+.contact-section {
+    background: #ffffff; /* Light grey background */
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Form Container */
+.contact-section .container {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.contact-section h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: #343a40;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Section Description */
+.contact-section p.lead {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+/* Form Labels */
+.contact-section .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Form Fields */
+.contact-section .form-control {
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+}
+
+/* Form Button */
+.contact-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
 
 /*Blog Section*/
 
