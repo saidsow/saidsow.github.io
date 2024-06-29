@@ -1,5 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Odibee+Sans&display=swap');
 
+/* Styles */
+:root {
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #ff0000; /* Red */
+    --neutral-color-black: #000000; /* Black */
+    --neutral-color-white: #ffffff; /* White */
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--neutral-color-white);
+    color: var(--neutral-color-black);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--neutral-color-black);
+}
+
+.nav-link {
+    color: var(--neutral-color-white);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+/* Accent Text */
+.custom-text-primary {
+    color: var(--primary-color);
+}
+
+.custom-text-secondary {
+    color: var(--secondary-color);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Example Section */
+.section-title {
+    color: var(--neutral-color-black);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.section-content {
+    color: var(--neutral-color-black);
+}
+
+.section-highlight {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/*End of styles.css*/
+
 html, body {
     scroll-behavior: smooth;
 }
